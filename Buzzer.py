@@ -29,7 +29,7 @@ lcdDisplay.setColor(0,0,0)
 # Read the input and print, waiting one second between readings
 while 1:
 	if(button.read() != 0):
-		counter++
+		counter = counter + 1
 		lcdDisplay.write(counter)
 		r = random.randint(0, 255)
 		g = random.randint(0, 255)
