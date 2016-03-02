@@ -1,0 +1,2 @@
+# Taller_vertical_v2
+Taller_vertical_Edision
