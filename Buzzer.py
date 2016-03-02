@@ -30,6 +30,7 @@ lcdDisplay.write(str(counter))
 # Read the input and print, waiting one second between readings
 while 1:
 	if(button.read() != 0):
+		lcdDisplay.setCursor(0, 0)
 		counter = counter + 1
 		lcdDisplay.write(str(counter))
 		r = random.randint(0, 255)
