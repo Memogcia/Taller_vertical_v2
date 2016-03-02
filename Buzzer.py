@@ -25,13 +25,13 @@ lcdDisplay = lcd.Jhd1313m1(0, 0x3E, 0x62)
 lcdDisplay.setColor(0,0,0)
 
 
-lcdDisplay.write(counter + '')
+lcdDisplay.write(str(counter))
 
 # Read the input and print, waiting one second between readings
 while 1:
 	if(button.read() != 0):
 		counter = counter + 1
-		lcdDisplay.write(counter + '')
+		lcdDisplay.write(str(counter))
 		r = random.randint(0, 255)
 		g = random.randint(0, 255)
 		b = random.randint(0, 255)
