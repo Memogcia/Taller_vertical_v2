@@ -41,7 +41,7 @@ while 1:
     			# play each note for one second
 			print("Boton presionado")
     			buzzer.playSound(chords[chord_ind], 1000000)
-    		time.sleep(0.1)
+    		time.sleep(0.0001)
 	
 	
 
